@@ -24,7 +24,7 @@ public class ChangeSignTest {
     }
     @Test
     public void shoutReturnZeroWithZero() {
-        int result = instance.changeSign(0;
+        int result = instance.changeSign(0);
         assert result == 0;
 
     }
