@@ -3,6 +3,8 @@ package task2;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class ChangeSignTest {
 
     private ChangeSign instance;
@@ -15,17 +17,17 @@ public class ChangeSignTest {
     @Test
     public void shoutReturnPositiveWithNegativeSign() {
         int result = instance.changeSign(10);
-        assert result == -10;
+        assertEquals(-10,result);
     }
     @Test
     public void shoutReturnNegativeWithPositiveSign() {
         int result = instance.changeSign(-10);
-        assert result == 10;
+        assertEquals(10,result);
     }
     @Test
     public void shoutReturnZeroWithZero() {
         int result = instance.changeSign(0);
-        assert result == 0;
+        assertEquals(0,result);
 
     }
 }
